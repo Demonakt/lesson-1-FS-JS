@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>test</title>
-    <link rel="stylesheet" href="scss/main.css">
-    <script src="https://kit.fontawesome.com/1e88dc12be.js" crossorigin="anonymous"></script>
+    <script async src="https://kit.fontawesome.com/1e88dc12be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+
     <script async src="base_javascript/main.js"></script>
+    <link rel="stylesheet" href="scss/main.css">
+    <script async src="base_javascript/swiper-bundle.min.js"></script>
 
 </head>
 <body class="body">
@@ -51,9 +54,29 @@
 <main class="cards container">
     <section>
         <article>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/apple-min.jpg" height="800" width="1200"/></div>
+                    <div class="swiper-slide"><img src="img/banana-min.jpg" height="768" width="1024"/></div>
+                    <div class="swiper-slide"><img src="img/cherry-min.jpg" height="1200" width="1920"/></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
         </article>
     </section>
 </main>
+
 </body>
 </html>

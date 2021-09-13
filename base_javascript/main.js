@@ -1,6 +1,5 @@
 'use strict'
 
-let bodu = document.body
 let burger = document.querySelector('.burger')
 let burgerToggle = document.querySelector('.burger__toggle')
 let linkBurger = document.getElementById('linkBurger')
@@ -26,3 +25,25 @@ if(logoText.innerText.length > 30){
     logoText.innerHTML = 'Enter max 30 sign '
     console.log('html - 16 line(max 30 sign)')
 }
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
